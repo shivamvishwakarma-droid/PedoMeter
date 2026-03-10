@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textSteps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Steps: 0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0.0 km"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textSteps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textCalories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calories: 0 kcal"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textDistance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Current activity: Unknown"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textCalories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textGoal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Daily goal: 8000 steps"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textRecommendations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Recommendations will appear here as you move."
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/textGoal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
